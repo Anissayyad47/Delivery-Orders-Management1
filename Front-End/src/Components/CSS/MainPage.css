@@ -1,0 +1,278 @@
+/* Nav Bar */
+.whole-container{
+    background-color: rgba(126, 115, 115, 0.877);
+}
+.NavBar{
+    background-color: rgb(255, 229, 180);
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+}
+
+.dukanse{
+    color: rgb(216, 213, 40);
+}
+.organization {
+    color: rgb(179, 22, 22);
+}
+.profile{
+    width: 5%;
+    height: 60px;
+}
+.profile:hover{
+    color: rgb(114, 107, 107);
+}
+.add-logo{
+    width: 6%;
+    height: 70px;
+}
+.add-logo:hover{
+   color: rgb(110, 100, 100);
+}
+.NavBarContenet{
+    border: 2px solid black;
+    width: 10%;
+    height: 50px;
+    margin-left:20px ;
+    margin-right: 20px;
+}
+
+/* ADD ORDER POPUP */
+.place-Order-Template{
+    background-color: white;
+    width: 33%;
+    height: 650px;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+.place-Order-top{
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.place-Order-top input{
+    height: 60px;
+    width: 90%;
+    border-radius: 15px;
+    outline: none;
+    text-align: center;
+    font-size: larger;
+}
+.place-Order-top input:hover{
+    background-color: rgb(230, 230, 230);
+}
+.place-Order-mid{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.place-order-Distance{
+    display: flex;
+    width: 90%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.place-order-Distance input{
+    border-radius: 15px;
+    width: 40%;
+    outline: none;
+    text-align: center;
+    font-size: larger;
+}
+.place-order-Distance input:hover{
+    background-color: rgb(230, 230, 230);
+}
+.place-Order-bottom{
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.place-order-cancel{
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.place-order-cancel button{
+    height: 70px;
+    width: 45%;
+    font-size: larger;
+    border-radius: 15px;
+}
+.place-order-cancel button:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+.popup-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    backdrop-filter: blur(5px); /* Blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+/* Placed Order Tamplate */
+.order-place-template-container{
+    display: flex;
+    align-items: center;
+}
+.order-place-template{
+    background-color: rgb(209, 209, 209);
+    border-radius: 31px;
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+}
+.order-place-template-in{
+    background-color: rgb(138, 134, 134);
+    width: 98%;
+    height: 367px;
+    border-radius: 28px;
+}
+.order-place-template-in p {
+    color: white;
+    margin-left: 10px;
+    font-weight: 450;
+    font-size: large;
+}
+
+.order-place-template-button{
+    border: none;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.order-place-template-button button{
+    width: 40%;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: larger;
+    background-color: rgb(255, 166, 0);
+    color: white;
+    border: none;
+}
+.order-place-template-button button:hover{
+    background-color: rgb(219, 219, 219);
+}
+
+.delivery-picked{
+    margin-left: 40px;
+    font-size: larger;
+    font-weight: 500;
+    color: white;
+}
+.order-complete-cancel-overlay{
+    border: 2px solid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    backdrop-filter: blur(5px); /* Blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.order-complete-cancel{
+    background-color: white;
+    border: 2px solid;
+    width: 40%;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 25px;
+}
+.order-complete-cancel div{
+    margin-top: 30px;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.order-complete-cancel div button{
+    width: 35%;
+    border-radius: 15px;
+    font-size: larger;
+}
+.order-complete-cancel div button:hover{
+    background-color: rgb(199, 199, 199);
+}
+
+.order-complete-cancel-popup-cancel{
+    margin-left: 90%;
+    width: 50px;
+    height: 50px;
+}
+.order-complete-cancel-popup-cancel:hover{
+    color: rgb(88, 88, 88);
+}
+/* Details */
+
+.order-details-template{
+    background-color: white;
+    width: 40%;
+    height: 800px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-details {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    font-size: larger;
+    height: 60px;
+
+}
+.order-details-template button {
+    width: 40%;
+    margin-top: 20px;
+    height: 60px;
+    border-radius: 15px;
+    font-size: larger;
+}
+.order-details h3 {
+    width: 28%;
+}
+.order-details p{
+    border: 2px solid;
+    border-radius: 5px;
+    width: 70%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    font-size: larger;
+}
