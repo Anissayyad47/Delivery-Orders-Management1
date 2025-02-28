@@ -32,7 +32,7 @@ export default function SellerPage(){
       useEffect(() => {
         const fetchOrders = async () => {
           try {
-            const response = await axios.get(`http://localhost:5500/sellerOrder/${sellerId}`);
+            const response = await axios.get(`https://delivery-orders-management-backend.onrender.com/sellerOrder/${sellerId}`);
             setOrderLsit(response.data);
             const total = response.data.reduce((sum, order) => sum + (order.price || 0), 0);
             setCharges(total);  // Fix: setOrderLsit → setOrderList
