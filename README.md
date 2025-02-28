@@ -38,6 +38,8 @@ Backend: Node.js, Express.js, MongoDB
 
 This project streamlines delivery management, making it more efficient and error-free. 
 
+URL : https://delivery-orders-management-frontend.onrender.com
+
 
 1) Login as seller or delivery partner
 
