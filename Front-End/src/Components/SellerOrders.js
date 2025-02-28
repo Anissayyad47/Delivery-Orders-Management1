@@ -39,7 +39,7 @@ export default function SellerOrders(){
     
 
     useEffect(() => {
-        axios.get("http://localhost:5500/api/user")
+        axios.get("https://delivery-orders-management-backend.onrender.com/api/user")
           .then((response) => {
             console.log("Received data:", response.data);
             if (Array.isArray(response.data)) {
@@ -57,7 +57,7 @@ export default function SellerOrders(){
             order_status: "Cancelled",
           }
           try{
-            await axios.put(`http://localhost:5500/api/orders/${delivery}`, updateData)
+            await axios.put(`https://delivery-orders-management-backend.onrender.com/api/orders/${delivery}`, updateData)
             toast.success("✅ Delivery Cancelled Successfully!", {
               position: "top-center",
               autoClose: 3000,
