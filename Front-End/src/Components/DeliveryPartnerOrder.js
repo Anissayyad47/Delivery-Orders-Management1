@@ -38,7 +38,7 @@ export default function DeliveryPartnerOrder(){
     };
     
     useEffect(() => {
-        axios.get("http://localhost:5500/api/user")
+        axios.get("https://delivery-orders-management-backend.onrender.com/api/user")
           .then((response) => {
             console.log("Received data:", response.data);
             if (Array.isArray(response.data)) {
@@ -62,7 +62,7 @@ export default function DeliveryPartnerOrder(){
         delivery_partner_id:userId,
       }
       try{
-        await axios.put(`http://localhost:5500/api/orders/${delivery}`, updateData)
+        await axios.put(`https://delivery-orders-management-backend.onrender.com/api/orders/${delivery}`, updateData)
         toast.success("✅ Delivery Picked Successfully!", {
           position: "top-center",
           autoClose: 3000,
@@ -92,7 +92,7 @@ export default function DeliveryPartnerOrder(){
         order_status: "Completed",
       }
       try{
-        await axios.put(`http://localhost:5500/api/orders/${delivery}`, updateData)
+        await axios.put(`https://delivery-orders-management-backend.onrender.com/api/orders/${delivery}`, updateData)
         toast.success("✅ Delivery Completed Successfully!", {
           position: "top-center",
           autoClose: 3000,
