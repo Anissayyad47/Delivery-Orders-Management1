@@ -1,0 +1,53 @@
+/* Settings Page Container */
+.settings-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+.settings-seller-dashboard{
+    flex-grow: 1;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+  /* Title */
+  .settings-container h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Settings Options */
+  .settings-options {
+    display: flex;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .logout-btn:hover {
+    background-color: #cc0000;
+  }
+  
+  /* Responsive for Mobile */
+  @media (max-width: 600px) {
+    .settings-container h2 {
+      font-size: 20px;
+    }
+    .logout-btn {
+      font-size: 16px;
+      padding: 10px 16px;
+    }
+  }
+  

@@ -1,0 +1,99 @@
+/* Background Overlay */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Popup Container */
+  .popup {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: slideIn 0.3s forwards;
+  }
+  
+  /* Animation */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Buttons */
+  .popup-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .confirm-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .cancel-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  .pick-btn-details{
+    background-color: #286aa7;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+  }
+  .confirm-btn:hover {
+    background: #218838;
+  }
+  
+  .cancel-btn:hover {
+    background: #c82333;
+  }
+  .complete-delivery{
+    display: flex;
+    justify-content: center;
+  }
+  .complete-delivery-in{
+    height: 10%;
+    width: 15%;
+    color: green;
+  }
+  .cancelled-delivery{
+    display: flex;
+    justify-content: center;
+  }
+  .cancelled-delivery-in{
+    height: 10%;
+    width: 15%;
+    color: rgb(128, 0, 0);
+  }

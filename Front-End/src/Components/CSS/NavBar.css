@@ -1,0 +1,39 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007bff; /* Blue background */
+  padding: 15px 20px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.navbar-logo {
+  height: 50px;
+  width: auto;
+}
+
+/* Title Styling */
+.navbar-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-logo {
+    height: 40px;
+  }
+
+  .navbar-title {
+    font-size: 1.5rem;
+  }
+}

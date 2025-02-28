@@ -1,10 +1,12 @@
 const mongoose = require("mongoose");
 
 const OrderSchema = new mongoose.Schema({
+  seller_id: {type:mongoose.Schema.Types.ObjectId,ref:"Seller_partner"},
+  delivery_partner_id: {type:mongoose.Schema.Types.ObjectId,ref:"Delivery_partner"},
   seller_name:String,
   address: String,
   products: [String],
-  customer_no: String,
+  customer_no: Number,
   distance: Number,
   price: Number,
   order_place_time: String,

@@ -1,0 +1,72 @@
+.picked-order-card {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: auto;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .picked-order-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .picked-order-info p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .picked-status {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .picked-status.pending {
+    color: orange;
+  }
+  
+  .picked-status.completed {
+    color: green;
+  }
+  
+  .picked-complete-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.2s;
+  }
+  
+  .picked-complete-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .picked-complete-btn:hover:not(:disabled) {
+    background-color: #218838;
+  }
+  
+  /* Mobile-Friendly Design */
+  @media (max-width: 600px) {
+    .picked-order-card {
+      padding: 15px;
+      width: 95%;
+    }
+  
+    .picked-order-info p {
+      font-size: 14px;
+    }
+  
+    .picked-complete-btn {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
