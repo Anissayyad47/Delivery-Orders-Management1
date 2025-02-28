@@ -51,7 +51,7 @@ export default function PlaceOrder({setIsAddOrderPopUp}){
             };
           
             try {
-              const response = await axios.post("http://localhost:5500/add-order", {newOrder,sellerId});
+              const response = await axios.post("https://delivery-orders-management-backend.onrender.com/add-order", {newOrder,sellerId});
               alert(response.data.message);
               setIsAddOrderPopUp(false);
               setInputOrder({
