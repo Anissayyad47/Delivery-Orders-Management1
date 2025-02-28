@@ -37,3 +37,8 @@ Backend: Node.js, Express.js, MongoDB
 
 
 This project streamlines delivery management, making it more efficient and error-free. 
+
+
+1) Login as seller or delivery partner
+   ![React App and 8 more pages - Personal - Microsoft​ Edge 28-02-2025 00_55_22](https://github.com/user-attachments/assets/cfe7f1a8-5734-4dca-be71-7a20a0aba77d)
+
